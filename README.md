@@ -1,18 +1,10 @@
 
 # Template Website Company Profile
 
- Projek ini saya coba buat serapih mungkin untuk memudahkan meng custom code didalamnya. projek ini dibuat dengan UI framework tailwind. Masih dikembangkan, Jika Mau berkontribusi gas.
+ Projek ini saya dengan template tailwind yg saya buat.
 
 
-## Features
-
-- Responsive Website
-- Carousel image
-- More Animation(Still progress)
-
-
-
-## Installation
+## Installation template
 
 Clone the project
 
