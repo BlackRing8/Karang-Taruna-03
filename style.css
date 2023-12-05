@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default css */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+/*  */
+
+.banner {
+    background-image: url('image/bg-ori-asli.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    filter:blur(5px);
+    z-index:-1;
+    position: absolute;
+}
+
+.banner2 {
+    background-image: url('image/bg-ori-2-01.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    filter:blur(5px);
+    z-index:-1;
+    position: absolute;
+    margin-left:10px;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        background-position: left;
+    }
+
+    .banner2 {
+        background-position:top;
+    }
+}
