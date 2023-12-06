@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katar Pedia 03</title>
+    <link rel="icon" href="image/logo-katar.png" />
+    <!-- CSS pribadi -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS luar -->
+    <link rel="stylesheet" href="scroll.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="public/css/swiper.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- animetion -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-red-700">
+    <!-- Navbar  -->
+    <nav class="backdrop-blur-lg bg-white fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <!-- Componen Logo dan nama company -->
+        <a href="" class="flex items-center">
+          <img src="image/logo-katar.png" class="h-14 mr-3" alt="Pitching" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap font-poppins flex text-slate-800"></span>
+        </a>
+        <!--  -->
+
+        <!-- Button download Proposal -->
+        <div class="flex md:order-2">
+          <a
+            href="public/proposal.pdf"
+            target="_blank"
+            class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-center mr-3 md:mr-0 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+            >Baca Proposal</a
+          >
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <!--  -->
+
+        <!-- List Navbar -->
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-300 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="blog.html" class="block py-2 pl-3 text-base pr-4 text-white bg-red-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Galeri</a>
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="organisasi.html"
+                class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Organisasi</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontak.html"
+                class="block py-2 pl-3 text-base pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Hubungi kami</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--  -->
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Section galeri -->
+    <section class="mt-24 mx-5 sm:mx-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/20230305_102511.jpg" alt="" data-aos="fade"/>
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/t1.JPG" alt="" data-aos="fade-up" data-aos-delay="200" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/f1.JPG" alt="" data-aos="fade-left"/>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/e1.JPG" alt=""data-aos="fade-up" data-aos-delay="200"/>
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/t2.jpg" alt=""data-aos="fade-down"  />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/f3.JPG" alt=""data-aos="fade-right" />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/20230305_102359.jpg" alt="" data-aos="fade-left"/>
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/t3.JPG" alt=""data-aos="fade-up" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/f2.JPG" alt="" data-aos="fade-down"/>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/e2.JPG" alt="" data-aos="fade-left"/>
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/e3.JPG" alt="" data-aos="fade-up"/>
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="image/footage-foto/e4.JPG" alt=""data-aos="fade-right" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir section -->
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 border-t-2 border-red-700 mt-10" data-aos="fade-up" data-aos-delay="200">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-6">
+          <!-- Container Componen logo, Nama company, List nav -->
+          <div class="md:flex md:justify-between">
+            <!-- Container Logo dan Nama Company -->
+            <div class="mb-6 md:mb-0">
+              <a href="" class="flex items-center">
+                <img src="image/logo-katar.png" class="h-16 me-3" alt="FlowBite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Katar Unit 03 Slipi</span>
+              </a>
+            </div>
+            <!--  -->
+  
+            <!-- Container List Nav -->
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Made by</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="https://blackring-dev.vercel.app/" class="hover:underline">BlackRing8</a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/karangtarunaunit03_slipi" class="hover:underline">Unit 03</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a href="https://www.instagram.com/karangtarunaunit03_slipi" class="hover:underline">Instagram</a>
+                  </li>
+                  <li>
+                    <a class="hover:underline">Twitter</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li class="mb-4">
+                    <a>Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a>Terms &amp; Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <!--  -->
+  
+          <!-- garis pemisah dua container -->
+          <hr class="my-6 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <!--  -->
+  
+          <!-- Container icon dan copyright -->
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">KatarPedia™</a>. All Rights Reserved. </span>
+          </div>
+          <!--  -->
+        </div>
+      </footer>
+      <!-- Akhir footer -->
+
+    <!-- script flowbit -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <!--  -->
+    <script src="script.js"></script>
+
+    <!-- animetion -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var typed = new Typewriter("#element", {
+        deleteSpeed: 20,
+        typedSpeed: 100,
+      });
+
+      typed.typeString("Membentuk Masa Depan yang Berkelanjutan.").start();
+
+      new Typewriter("#intro-header", {
+        strings: ["Introdution Pitching Festival"],
+        autoStart: true,
+      });
+    </script>
+
+    <!-- Script swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
